@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityMembers">
+
+    <TextView
+        android:id="@+id/txtBottom"
+        android:layout_width="411dp"
+        android:layout_height="71dp"
+        android:background="#F7D098"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTop"
+        android:layout_width="411dp"
+        android:layout_height="71dp"
+        android:background="#F7D098"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="301dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="128dp"
+        android:hint="Head of Finance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editText"
+        android:layout_width="300dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="220dp"
+        android:hint="Project Accountant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editText2"
+        android:layout_width="306dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="404dp"
+        android:hint="Head of Marketing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editText3"
+        android:layout_width="312dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="372dp"
+        android:hint="Project Security"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editText4"
+        android:layout_width="308dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="180dp"
+        android:hint="Vice President"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editText5"
+        android:layout_width="304dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="84dp"
+        android:hint="Head of Analytics"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nameSix"
+        android:layout_width="303dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="584dp"
+        android:layout_marginEnd="24dp"
+        android:text="Jordan Belfort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMembers"
+        android:layout_width="208dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="Members"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameOne"
+        android:layout_width="303dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="20dp"
+        android:text="Simon Levi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameTwo"
+        android:layout_width="303dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="20dp"
+        android:text="Tommy Chong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameThree"
+        android:layout_width="303dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="284dp"
+        android:layout_marginEnd="20dp"
+        android:text="Michael Corieone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameFour"
+        android:layout_width="303dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="20dp"
+        android:text="Rocky BalBoa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameFive"
+        android:layout_width="303dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="20dp"
+        android:text="Benjamin Franklin Parker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgOne"
+        android:layout_width="60dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imgTwo"
+        android:layout_width="60dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="196dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imgThree"
+        android:layout_width="60dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="290dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imgSix"
+        android:layout_width="60dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imgFour"
+        android:layout_width="60dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="284dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imgFive"
+        android:layout_width="60dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

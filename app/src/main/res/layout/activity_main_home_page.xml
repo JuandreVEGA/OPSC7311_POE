@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityHomePage">
+
+    <TextView
+        android:id="@+id/txtProject"
+        android:layout_width="328dp"
+        android:layout_height="600dp"
+        android:background="#48A1A8"
+        android:fontFamily="@font/roboto"
+        android:text="Project :"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddproject"
+        app:layout_constraintVertical_bias="0.154" />
+
+    <TextView
+        android:id="@+id/txtTopBorder"
+        android:layout_width="411dp"
+        android:layout_height="71dp"
+        android:background="#F7D098"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtDescriptionInfo"
+        android:layout_width="289dp"
+        android:layout_height="71dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/roboto"
+        android:text="Description"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBottomBorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.209" />
+
+    <TextView
+        android:id="@+id/txtProjectName"
+        android:layout_width="289dp"
+        android:layout_height="71dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/roboto"
+        android:text="Project Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescriptionInfo"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <TextView
+        android:id="@+id/txtLocation"
+        android:layout_width="289dp"
+        android:layout_height="70dp"
+        android:background="#FFFFFF"
+        android:text="Location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472" />
+
+    <TextView
+        android:id="@+id/txtCatName"
+        android:layout_width="289dp"
+        android:layout_height="70dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/roboto"
+        android:text="Deadline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLocation"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <TextView
+        android:id="@+id/txtRole"
+        android:layout_width="289dp"
+        android:layout_height="70dp"
+        android:background="#FFFFFF"
+        android:text="Role"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBottomBorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCatName"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <TextView
+        android:id="@+id/txtAddproject"
+        android:layout_width="208dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/roboto"
+        android:text="Add Project"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBottomBorder"
+        app:layout_constraintEnd_toEndOf="@+id/txtTopBorder"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/txtBottomBorder"
+        android:layout_width="411dp"
+        android:layout_height="80dp"
+        android:background="#F7D098"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnAddCat1"
+        android:layout_width="86dp"
+        android:layout_height="54dp"
+        android:background="#F7D098"
+        android:src="@android:drawable/ic_menu_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtName"
+        android:layout_width="287dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="64dp"
+        android:hint="hint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtProjectName"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtDescription"
+        android:layout_width="287dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="64dp"
+        android:hint="hint"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBottomBorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtDescriptionInfo"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtLocationInfo"
+        android:layout_width="287dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="64dp"
+        android:hint="hint"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBottomBorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtLocation"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtCatNameInfo"
+        android:layout_width="287dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:hint="hint"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBottomBorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtCatName"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/RoleInfo"
+        android:layout_width="287dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="64dp"
+        android:hint="hint"
+        app:layout_constraintBottom_toTopOf="@+id/txtBottomBorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtRole"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <Button
+        android:id="@+id/btnBack2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#009688"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
