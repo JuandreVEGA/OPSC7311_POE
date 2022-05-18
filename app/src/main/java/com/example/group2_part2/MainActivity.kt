@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         val registerButton: Button = findViewById(R.id.BTNRegister)
         registerButton.setOnClickListener { register() }
-
+        // Testing Changes
     }
     // Login in user and take them to another page
     private fun login() {
