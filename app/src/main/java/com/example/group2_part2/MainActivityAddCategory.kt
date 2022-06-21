@@ -7,11 +7,21 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.ImageView
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 import java.util.*
+import com.squareup.picasso.Picasso
 
 class MainActivityAddCategory : AppCompatActivity() {
+
+
 
     val storage = Firebase.storage
 
@@ -19,11 +29,17 @@ class MainActivityAddCategory : AppCompatActivity() {
 
     val PICK_IMAGE_REQUEST = 71
 
+    var image : String = ""
+
+    lateinit var imageDisplay: ImageView
+
     private var filePath: Uri? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_add_category)
+
+        imageDisplay = findViewById(R.id.imageView11)
 
         val backButton: Button = findViewById(R.id.btnBack3)
         backButton.setOnClickListener {
@@ -32,7 +48,6 @@ class MainActivityAddCategory : AppCompatActivity() {
         }
 
         val upload: ImageButton = findViewById(R.id.btnAddCat1)
-
         upload.setOnClickListener {
             val intent = Intent()
             intent.type = "image/*"
@@ -41,6 +56,22 @@ class MainActivityAddCategory : AppCompatActivity() {
                 Intent.createChooser(intent, "Select Picture"),
                 PICK_IMAGE_REQUEST
             )
+            readDatabase()
+        }
+    }
+
+    fun readDatabase(){
+        val db = FirebaseFirestore.getInstance()
+
+        db.collection("Users").get().addOnCompleteListener{
+            if (it.isSuccessful){
+                for (document in it.result!!){
+                    if (document.data.getValue("UserUid").toString() == Firebase.auth.uid){
+                        image = document.data.getValue("Image").toString()
+                    }
+                }
+                Picasso.get().load(image).into(imageDisplay)
+            }
         }
     }
 

@@ -20,6 +20,5 @@ class MainActivityEditCatagory : AppCompatActivity() {
             val intent = Intent(this, MainActivityHomePage::class.java)
             startActivity(intent)
         }
-
     }
 }
