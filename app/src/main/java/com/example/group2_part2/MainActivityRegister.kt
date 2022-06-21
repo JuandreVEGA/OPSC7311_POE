@@ -54,7 +54,7 @@ class MainActivityRegister : AppCompatActivity() {
     private fun updateUI(currentUser: FirebaseUser?) {
         if (currentUser != null) {
             Log.d(ContentValues.TAG, currentUser.displayName.toString())
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, MainActivityEditProject::class.java)
             intent.putExtra("user", currentUser.displayName.toString())
             startActivity(intent)
         }
@@ -68,6 +68,7 @@ class MainActivityRegister : AppCompatActivity() {
         { task ->
             if (task.isSuccessful) {
                 println(task.getResult().getUser())
+
                 uid = task.getResult().getUser()?.getUid().toString();
 
                 val db = Firebase.firestore
@@ -75,9 +76,9 @@ class MainActivityRegister : AppCompatActivity() {
                 val user = hashMapOf(
                     "Email" to email,
                     "Name" to name,
-                    "Company Name" to companyName,
+                    "CompanyName" to companyName,
                     "Password" to password,
-                    "User Uid" to uid
+                    "UserUid" to uid
                 )
 
                 db.collection("Users").document(uid)

@@ -7,6 +7,16 @@
     tools:context=".MainActivityAddMembers">
 
     <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="419dp"
+        android:layout_height="750dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/screenshot__3_" />
+
+    <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

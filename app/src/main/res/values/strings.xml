@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">High Roller</string>
     <string name="register">Register</string>
+    <string name="button_incr">ButtonIncrease</string>
+    <string name="Decrease_10">- 10%</string>
+    <string name="Increases_10">+ 10%</string>
+    <string name="button">Progress Bar</string>
 </resources>

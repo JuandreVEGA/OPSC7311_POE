@@ -8,6 +8,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
@@ -49,10 +50,11 @@ class MainActivityHomePage : AppCompatActivity() {
 
         val project = hashMapOf(
             "Description" to descriptionFinal,
-            "Project Name" to projectNameFinal,
+            "ProjectName" to projectNameFinal,
             "Location" to locationFinal,
             "Deadline" to deadlineFinal,
-            "Roll" to rollFinal
+            "Roll" to rollFinal,
+            "UserUID" to Firebase.auth.uid
         )
 
         db1.collection("Projects")

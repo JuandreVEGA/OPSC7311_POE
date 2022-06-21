@@ -15,6 +15,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Group2_Part2">
         <activity
+            android:name=".MainActivityProgress"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityVisuals"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityPieChart"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityGraph"
+            android:exported="false" />
+        <activity
+            android:name=".Graph"
+            android:exported="false" />
+        <activity
             android:name=".MainActivityAddCategory"
             android:exported="false" />
         <activity
